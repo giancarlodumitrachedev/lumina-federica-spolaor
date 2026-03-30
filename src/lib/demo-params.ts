@@ -11,12 +11,11 @@ export interface DemoParams {
 export async function getDemoParams(searchParamsPromise: Promise<{ [key: string]: string | string[] | undefined }> | undefined): Promise<DemoParams> {
   const searchParams = searchParamsPromise ? await searchParamsPromise : {};
   
-  // AL SITO VENDUTO: Se imposti queste variabili su Vercel, il sito ignorerà l'URL
-  // e utilizzerà sempre questi dati finali. Il dominio resterà pulitissimo: www.ilsuosito.it
-  const rawName = process.env.NEXT_PUBLIC_CLIENT_NAME || (searchParams.name as string) || "Dott. Mario Rossi";
-  const rawCity = process.env.NEXT_PUBLIC_CLIENT_CITY || (searchParams.city as string) || "Milano";
-  const rawAddress = process.env.NEXT_PUBLIC_CLIENT_ADDRESS || (searchParams.address as string) || "Via Montenapoleone 1";
-  const rawField = process.env.NEXT_PUBLIC_CLIENT_FIELD || (searchParams.field as string) || "psicologo";
+  // Dati cliente hardcoded direttamente
+  const rawName = "Dott.ssa Federica Spolaor";
+  const rawCity = "Venezia";
+  const rawAddress = "Castello, Campiello Santa Maria Formosa, 6129, 30122 Venezia VE";
+  const rawField = "psicologa e psicoterapeuta";
 
   // Rimuovi i trattini dall'URL e rendi la prima lettera maiuscola (es. "terapia-di-coppia" -> "Terapia di coppia")
   const fieldWithoutHyphens = rawField.replace(/-/g, " ");

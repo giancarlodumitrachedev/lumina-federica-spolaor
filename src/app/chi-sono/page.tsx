@@ -37,7 +37,7 @@ export default async function ChiSonoPage({
               {params.name} <span className="text-foreground/50 font-normal">| {params.fieldDisplay}</span>
             </h2>
             <p className="mb-4">
-              Sono una psicologa e psicoterapeuta che opera e riceve principalmente nella città di Venezia. Il mio obiettivo è offrire uno spazio clinico di alta professionalità, basato sull'empatia, sulla fiducia e sull'ascolto attento.
+              La {params.name} è una psicologa e psicoterapeuta che opera e riceve principalmente nella città di Venezia. Il mio obiettivo è offrire uno spazio clinico di alta professionalità, basato sull&apos;empatia, sulla fiducia e sull&apos;ascolto attento.
             </p>
 
             <h3 className="text-xl font-medium text-secondary-foreground mt-8 mb-2">Specializzazione</h3>
@@ -47,17 +47,17 @@ export default async function ChiSonoPage({
 
             <h3 className="text-xl font-medium text-secondary-foreground mt-8 mb-2">Esperta EMDR</h3>
             <p className="mb-4">
-              Sono stabilmente abilitata all'utilizzo della tecnica <strong>EMDR</strong> (Eye Movement Desensitization and Reprocessing), un metodo clinicamente testato ed estremamente efficace per il trattamento avanzato di traumi pregressi e dello stress emotivo acuto.
+              Sono stabilmente abilitata all&apos;utilizzo della tecnica <strong>EMDR</strong> (Eye Movement Desensitization and Reprocessing), un metodo clinicamente testato ed estremamente efficace per il trattamento avanzato di traumi pregressi e dello stress emotivo acuto.
             </p>
 
             <h3 className="text-xl font-medium text-secondary-foreground mt-8 mb-2">Ambiti di Intervento</h3>
             <p className="mb-4">
-              Mi occupo di consulenza psicologica e percorsi terapeutici su misura rivolti a individui singoli, coppie o gruppi. Tratto in maniera approfondita problematiche e sintomatologie cliniche come stati d'ansia, depressione e disturbi della personalità.
+              Mi occupo di consulenza psicologica e percorsi terapeutici su misura rivolti a individui singoli, coppie o gruppi. Tratto in maniera approfondita problematiche e sintomatologie cliniche come stati d&apos;ansia, depressione e disturbi della personalità.
             </p>
 
             <h3 className="text-xl font-medium text-secondary-foreground mt-8 mb-2">Collaborazioni nel Territorio</h3>
             <p className="mb-8">
-              Negli anni ho maturato esperienza e ho lavorato a diversi progetti attivi sul territorio veneto, che includono interventi all'interno delle scuole e preziose collaborazioni professionali con enti di spicco come l'Associazione Amici dell'Ordine di Malta.
+              Negli anni ho maturato esperienza e ho lavorato a diversi progetti attivi sul territorio, che includono interventi all&apos;interno delle scuole e preziose collaborazioni professionali con enti di spicco come l&apos;Associazione Amici dell&apos;Ordine di Malta.
             </p>
             
             <SmartLink
