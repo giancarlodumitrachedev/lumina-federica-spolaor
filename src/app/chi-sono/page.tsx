@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { getDemoParams } from "@/lib/demo-params";
 import { SmartLink } from "@/components/smart-link";
+import { getDemoParams } from "@/lib/demo-params";
 
 export const metadata = { title: "Chi Sono | Lumina Psicologo" };
 
@@ -19,7 +19,7 @@ export default async function ChiSonoPage({
     <div className="py-24 bg-background min-h-[calc(100vh-140px)]">
       <div className="max-w-4xl mx-auto px-6">
         <h1 className="text-secondary-foreground font-heading text-4xl md:text-5xl font-semibold mb-8 text-center">
-          Chi Sono
+          Profilo Professionale
         </h1>
         <div className="flex flex-col md:flex-row gap-12 items-start mt-12 md:mt-16">
           <div className="w-full md:w-1/3 relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl shrink-0">
@@ -37,18 +37,27 @@ export default async function ChiSonoPage({
               {params.name} <span className="text-foreground/50 font-normal">| {params.fieldDisplay}</span>
             </h2>
             <p className="mb-4">
-              La mia passione per la psicologia nasce dal desiderio profondo di comprendere l'essere umano in tutte le sue sfaccettature. 
-              Nel corso della mia carriera, ho affinato un approccio terapeutico che integra competenze cliniche rigorose con una reale 
-              ed empatica presenza relazionale.
+              Sono una psicologa e psicoterapeuta che opera e riceve principalmente nella città di Venezia. Il mio obiettivo è offrire uno spazio clinico di alta professionalità, basato sull'empatia, sulla fiducia e sull'ascolto attento.
             </p>
+
+            <h3 className="text-xl font-medium text-secondary-foreground mt-8 mb-2">Specializzazione</h3>
             <p className="mb-4">
-              Mi sono specializzato attraverso anni di studio e pratica clinica, sviluppando una solida esperienza nel trattamento 
-              delle {params.fieldDisplay.toLowerCase()} e delle difficoltà emotive in generale. Il mio obiettivo principale è fornire uno spazio sicuro dove 
-              i pazienti possano esplorare se stessi senza il timore di essere giudicati.
+              Sono specializzata in psicoterapia presso il <strong>CISSPAT</strong> (Centro Italiano Studio Sviluppo Psicoterapia a Breve Termine) di Padova. Questo approccio è studiato per focalizzarsi attivamente sul cambiamento nel momento presente, fornendo strumenti concreti per superare i blocchi emotivi a breve termine.
             </p>
+
+            <h3 className="text-xl font-medium text-secondary-foreground mt-8 mb-2">Esperta EMDR</h3>
+            <p className="mb-4">
+              Sono stabilmente abilitata all'utilizzo della tecnica <strong>EMDR</strong> (Eye Movement Desensitization and Reprocessing), un metodo clinicamente testato ed estremamente efficace per il trattamento avanzato di traumi pregressi e dello stress emotivo acuto.
+            </p>
+
+            <h3 className="text-xl font-medium text-secondary-foreground mt-8 mb-2">Ambiti di Intervento</h3>
+            <p className="mb-4">
+              Mi occupo di consulenza psicologica e percorsi terapeutici su misura rivolti a individui singoli, coppie o gruppi. Tratto in maniera approfondita problematiche e sintomatologie cliniche come stati d'ansia, depressione e disturbi della personalità.
+            </p>
+
+            <h3 className="text-xl font-medium text-secondary-foreground mt-8 mb-2">Collaborazioni nel Territorio</h3>
             <p className="mb-8">
-              Lavorando insieme, cercheremo non solo di alleviare il sintomo o il disagio immediato, ma di rintracciare le radici 
-              profonde delle dinamiche interiori, promuovendo un cambiamento autentico e duraturo.
+              Negli anni ho maturato esperienza e ho lavorato a diversi progetti attivi sul territorio veneto, che includono interventi all'interno delle scuole e preziose collaborazioni professionali con enti di spicco come l'Associazione Amici dell'Ordine di Malta.
             </p>
             
             <SmartLink
